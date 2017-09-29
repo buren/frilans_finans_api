@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Interact with Frilans Finans API'
   spec.description   = 'Interact with Frilans Finans API (still under development)'
-  spec.homepage      = 'https://github.com/justarrived/just-match-api.git'
+  spec.homepage      = 'https://github.com/buren/frilans_finans_api'
   spec.license       = 'MIT'
 
   spec.files         = Dir['lib/*/**.rb'] + Dir['lib/*/**.json'] + Dir['bin/*'] + %w(README.MD LICENSE.txt) # rubocop:disable Metrics/LineLength
