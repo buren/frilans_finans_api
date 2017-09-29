@@ -1,5 +1,7 @@
 # FrilansFinansApi
 
+[![Build Status](https://travis-ci.org/buren/frilans_finans_api.svg?branch=master)](https://travis-ci.org/buren/frilans_finans_api)
+
 Interact with Frilans Finans API.
 
 ## Installation
