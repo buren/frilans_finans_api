@@ -2,12 +2,12 @@
 
 require 'spec_helper'
 
-RSpec.describe FrilansFinansApi::Request do
+RSpec.describe FrilansFinansAPI::Request do
   let(:auth_headers) { frilans_finans_authed_request_headers }
   let(:headers) do
     { 'User-Agent' => 'FrilansFinansAPI - Ruby client' }
   end
-  let(:base_uri) { FrilansFinansApi.config.base_uri }
+  let(:base_uri) { FrilansFinansAPI.config.base_uri }
 
   describe '#get' do
     before(:each) { stub_frilans_finans_auth_request }

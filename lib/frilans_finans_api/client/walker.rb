@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-module FrilansFinansApi
+module FrilansFinansAPI
   module Walker
     def self.included(base)
       base.extend(ClassMethods)
     end
 
     module ClassMethods
-      def walk(client: FrilansFinansApi.config.client_klass.new)
+      def walk(client: FrilansFinansAPI.config.client_klass.new)
         current_page = 1
         total_pages = 2
 

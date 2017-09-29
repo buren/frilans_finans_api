@@ -2,10 +2,10 @@
 
 require 'spec_helper'
 
-RSpec.describe FrilansFinansApi::Company do
-  let(:default_headers) { FrilansFinansApi::Client::HEADERS }
+RSpec.describe FrilansFinansAPI::Company do
+  let(:default_headers) { FrilansFinansAPI::Client::HEADERS }
   let(:base_url) { 'https://frilansfinans.se/api' }
-  let(:client) { FrilansFinansApi::FixtureClient.new }
+  let(:client) { FrilansFinansAPI::FixtureClient.new }
 
   describe '#create' do
     subject { described_class }
@@ -13,7 +13,7 @@ RSpec.describe FrilansFinansApi::Company do
     let(:valid_attributes) do
       json = client.read(:company_post)
       data = JSON.parse(json)['data']
-      resource = FrilansFinansApi::Resource.new(data)
+      resource = FrilansFinansAPI::Resource.new(data)
       resource.attributes
     end
 

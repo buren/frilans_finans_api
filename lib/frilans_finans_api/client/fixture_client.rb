@@ -2,7 +2,7 @@
 
 require 'uri'
 
-module FrilansFinansApi
+module FrilansFinansAPI
   class FixtureClient
     # NOTE: If this is extracted out of just_match_api, this will need to change
     BASE_PATH = __dir__ + '/../../../fixtures'

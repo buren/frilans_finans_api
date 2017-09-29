@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-RSpec.describe FrilansFinansApi::Document do
+RSpec.describe FrilansFinansAPI::Document do
   describe 'status' do
     let(:response) { mock_httparty_response(code: 200) }
 
@@ -52,7 +52,7 @@ RSpec.describe FrilansFinansApi::Document do
 
   context 'collection' do
     let(:response) do
-      json = FrilansFinansApi::FixtureClient.new.read(:professions)
+      json = FrilansFinansAPI::FixtureClient.new.read(:professions)
       mock_httparty_response(body: json)
     end
 
@@ -90,7 +90,7 @@ RSpec.describe FrilansFinansApi::Document do
     end
 
     it 'can return #resources' do
-      expect(subject.resources.first).to be_a(FrilansFinansApi::Resource)
+      expect(subject.resources.first).to be_a(FrilansFinansAPI::Resource)
       # Assumes that professions fixture has 10 resources..
       expect(subject.resources.length).to eq(10)
     end
@@ -98,7 +98,7 @@ RSpec.describe FrilansFinansApi::Document do
 
   context 'single' do
     let(:response) do
-      json = FrilansFinansApi::FixtureClient.new.read(:profession)
+      json = FrilansFinansAPI::FixtureClient.new.read(:profession)
       mock_httparty_response(body: json)
     end
 
@@ -128,7 +128,7 @@ RSpec.describe FrilansFinansApi::Document do
 
     it 'can return #resources' do
       expect(subject.resources.length).to eq(1)
-      expect(subject.resources.first).to be_a(FrilansFinansApi::Resource)
+      expect(subject.resources.first).to be_a(FrilansFinansAPI::Resource)
     end
   end
 end

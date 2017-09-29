@@ -1,4 +1,4 @@
-# FrilansFinansApi
+# FrilansFinansAPI
 
 [![Build Status](https://travis-ci.org/buren/frilans_finans_api.svg?branch=master)](https://travis-ci.org/buren/frilans_finans_api)
 
@@ -23,8 +23,8 @@ Or install it yourself as:
 __Configure__
 
 ```ruby
-FrilansFinansApi.configure do |config|
-  config.client_klass  = FrilansFinansApi::Client
+FrilansFinansAPI.configure do |config|
+  config.client_klass  = FrilansFinansAPI::Client
   config.base_uri      = ENV.fetch('FRILANS_FINANS_BASE_URI')
   config.client_id     = ENV.fetch('FRILANS_FINANS_CLIENT_ID')
   config.client_secret = ENV.fetch('FRILANS_FINANS_CLIENT_SECRET')
@@ -34,7 +34,7 @@ end
 ## Usage
 
 ```ruby
-include FrilansFinansApi
+include FrilansFinansAPI
 
 # GET /professions?page=1
 document = Profession.index(page: 1)

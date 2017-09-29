@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module FrilansFinansApi
+module FrilansFinansAPI
   module Statuses
     module Invoice
       STATUSES = {

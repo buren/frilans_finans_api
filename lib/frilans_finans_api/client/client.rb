@@ -2,7 +2,7 @@
 
 require 'frilans_finans_api/client/request'
 
-module FrilansFinansApi
+module FrilansFinansAPI
   class Client
     attr_reader :request
 

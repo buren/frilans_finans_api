@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module FrilansFinansApi
+module FrilansFinansAPI
   class Resource
     def initialize(document)
       @data = document || {}

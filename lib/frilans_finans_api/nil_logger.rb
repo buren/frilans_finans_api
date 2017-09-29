@@ -2,7 +2,7 @@
 
 require 'logger'
 
-module FrilansFinansApi
+module FrilansFinansAPI
   class NilLogger < ::Logger
     def initialize(*args); end
 

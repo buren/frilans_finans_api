@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module FrilansFinansApi
+module FrilansFinansAPI
   class NilClient
     HTTP_STATUS = 200
     NIL_URI = URI('http://example.com')

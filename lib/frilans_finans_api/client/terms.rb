@@ -2,7 +2,7 @@
 
 require 'httparty'
 
-module FrilansFinansApi
+module FrilansFinansAPI
   class Terms
     USER_URL = 'https://www.frilansfinans.se/just-arrived-employment-agreement/'.freeze
     COMPANY_USER_URL = 'https://www.frilansfinans.se/just-arrived-consultancy-agreement/'.freeze

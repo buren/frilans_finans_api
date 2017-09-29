@@ -2,10 +2,10 @@
 
 require 'spec_helper'
 
-RSpec.describe FrilansFinansApi::Currency do
-  let(:default_headers) { FrilansFinansApi::Client::HEADERS }
+RSpec.describe FrilansFinansAPI::Currency do
+  let(:default_headers) { FrilansFinansAPI::Client::HEADERS }
   let(:base_url) { 'https://frilansfinans.se/api' }
-  let(:client) { FrilansFinansApi::FixtureClient.new }
+  let(:client) { FrilansFinansAPI::FixtureClient.new }
 
   describe '#currencies' do
     subject { described_class }

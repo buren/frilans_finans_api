@@ -2,9 +2,9 @@
 
 require 'spec_helper'
 
-RSpec.describe FrilansFinansApi::Resource do
+RSpec.describe FrilansFinansAPI::Resource do
   let(:data) do
-    json = FrilansFinansApi::FixtureClient.new.read(:profession)
+    json = FrilansFinansAPI::FixtureClient.new.read(:profession)
     JSON.parse(json)['data']
   end
 

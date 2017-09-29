@@ -2,11 +2,11 @@
 
 require 'spec_helper'
 
-RSpec.describe FrilansFinansApi::Walker do
+RSpec.describe FrilansFinansAPI::Walker do
   describe '#walk' do
     subject do
       Class.new do
-        include FrilansFinansApi::Walker
+        include FrilansFinansAPI::Walker
 
         def self.index(*_args)
           OpenStruct.new(

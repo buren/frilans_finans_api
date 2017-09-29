@@ -2,17 +2,17 @@
 
 require 'spec_helper'
 
-RSpec.describe FrilansFinansApi::Client do
+RSpec.describe FrilansFinansAPI::Client do
   before(:each) { stub_frilans_finans_auth_request }
   let(:access_token) { 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' }
 
   let(:default_headers) do
-    headers = FrilansFinansApi::Request::HEADERS.dup
+    headers = FrilansFinansAPI::Request::HEADERS.dup
     headers['Authorization'] = "Bearer #{access_token}"
     { headers: headers }
   end
-  let(:base_uri) { FrilansFinansApi.config.base_uri }
-  let(:fixture_client) { FrilansFinansApi::FixtureClient.new }
+  let(:base_uri) { FrilansFinansAPI.config.base_uri }
+  let(:fixture_client) { FrilansFinansAPI::FixtureClient.new }
 
   describe '#professions' do
     subject do

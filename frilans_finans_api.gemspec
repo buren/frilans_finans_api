@@ -7,7 +7,7 @@ require 'frilans_finans_api/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'frilans_finans_api'
-  spec.version       = FrilansFinansApi::VERSION
+  spec.version       = FrilansFinansAPI::VERSION
   spec.authors       = ['Jacob Burenstam']
   spec.email         = ['burenstam@gmail.com']
 

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module FrilansFinansApi
+module FrilansFinansAPI
   module ParseLog
     class LogRequest
       attr_reader :uri, :params, :body, :status
@@ -30,7 +30,7 @@ module FrilansFinansApi
     def self.call(filename)
       lines = []
       File.foreach(filename) do |log_line|
-        next unless log_line.index('[FrilansFinansApi::Request]')
+        next unless log_line.index('[FrilansFinansAPI::Request]')
 
         # MATCH BODY
         body_match = 'BODY: '

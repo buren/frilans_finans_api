@@ -2,11 +2,11 @@
 
 require 'spec_helper'
 
-RSpec.describe FrilansFinansApi do
-  let(:default_client_klass) { FrilansFinansApi::Client }
+RSpec.describe FrilansFinansAPI do
+  let(:default_client_klass) { FrilansFinansAPI::Client }
 
   it 'has a version number' do
-    expect(FrilansFinansApi::VERSION).not_to be_nil
+    expect(FrilansFinansAPI::VERSION).not_to be_nil
   end
 
   describe '#config' do

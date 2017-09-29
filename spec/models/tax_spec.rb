@@ -2,10 +2,10 @@
 
 require 'spec_helper'
 
-RSpec.describe FrilansFinansApi::Tax do
-  let(:default_headers) { FrilansFinansApi::Client::HEADERS }
+RSpec.describe FrilansFinansAPI::Tax do
+  let(:default_headers) { FrilansFinansAPI::Client::HEADERS }
   let(:base_url) { 'https://frilansfinans.se/api' }
-  let(:client) { FrilansFinansApi::FixtureClient.new }
+  let(:client) { FrilansFinansAPI::FixtureClient.new }
 
   describe '#taxes' do
     subject { described_class }

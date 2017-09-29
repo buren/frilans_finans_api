@@ -2,7 +2,7 @@
 
 require 'json'
 
-module FrilansFinansApi
+module FrilansFinansAPI
   class Document
     attr_reader :status, :json, :uri
 

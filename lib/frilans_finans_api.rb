@@ -25,7 +25,7 @@ require 'frilans_finans_api/statuses'
 require 'frilans_finans_api/nil_logger'
 require 'frilans_finans_api/nil_event_logger'
 
-module FrilansFinansApi
+module FrilansFinansAPI
   class << self
     attr_accessor :config
   end

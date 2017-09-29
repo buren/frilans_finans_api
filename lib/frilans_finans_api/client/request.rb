@@ -2,7 +2,7 @@
 
 require 'httparty'
 
-module FrilansFinansApi
+module FrilansFinansAPI
   class Request
     USER_AGENT = {
       'User-Agent' => 'FrilansFinansAPI - Ruby client'
@@ -18,11 +18,11 @@ module FrilansFinansApi
     attr_reader :credentials, :base_uri, :access_token
 
     def initialize(base_uri: nil, client_id: nil, client_secret: nil)
-      @base_uri = base_uri || FrilansFinansApi.config.base_uri
+      @base_uri = base_uri || FrilansFinansAPI.config.base_uri
       @credentials = {
         grant_type: GRANT_TYPE,
-        client_id: client_id || FrilansFinansApi.config.client_id,
-        client_secret: client_secret || FrilansFinansApi.config.client_secret
+        client_id: client_id || FrilansFinansAPI.config.client_id,
+        client_secret: client_secret || FrilansFinansAPI.config.client_secret
       }
       @access_token = nil
     end
@@ -134,12 +134,12 @@ module FrilansFinansApi
         "STATUS: #{status}",
         "BODY: #{body}"
       ].join(' ')
-      FrilansFinansApi.config.event_logger.request_event(params: json_params,
+      FrilansFinansAPI.config.event_logger.request_event(params: json_params,
                                                          status: status,
                                                          verb: verb,
                                                          uri: uri,
                                                          body: body)
-      FrilansFinansApi.config.logger.info log_body
+      FrilansFinansAPI.config.logger.info log_body
     end
   end
 end

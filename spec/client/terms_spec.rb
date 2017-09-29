@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-RSpec.describe FrilansFinansApi::Terms do
+RSpec.describe FrilansFinansAPI::Terms do
   let(:base_user_url) { described_class::USER_URL }
   let(:base_company_user_url) { described_class::COMPANY_USER_URL }
   let(:headers) do

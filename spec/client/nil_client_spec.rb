@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-RSpec.describe FrilansFinansApi::NilClient do
+RSpec.describe FrilansFinansAPI::NilClient do
   %i(
     currencies
     professions

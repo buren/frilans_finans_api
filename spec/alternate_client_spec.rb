@@ -2,14 +2,14 @@
 
 require 'spec_helper'
 
-RSpec.describe 'Alternate FrilansFinansApi client' do
+RSpec.describe 'Alternate FrilansFinansAPI client' do
   [
-    FrilansFinansApi::FixtureClient,
-    FrilansFinansApi::NilClient
+    FrilansFinansAPI::FixtureClient,
+    FrilansFinansAPI::NilClient
   ].each do |alternate_client_klass|
     context alternate_client_klass do
       it 'implements all client methods' do
-        client_methods = FrilansFinansApi::Client.instance_methods
+        client_methods = FrilansFinansAPI::Client.instance_methods
         alternate_client_methods = alternate_client_klass.instance_methods
 
         client_methods -= Object.instance_methods + [:request]

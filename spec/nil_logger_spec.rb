@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-RSpec.describe FrilansFinansApi::NilLogger do
+RSpec.describe FrilansFinansAPI::NilLogger do
   it 'has the same methods as Ruby standard lib Logger' do
     expect(described_class.instance_methods - Logger.instance_methods).to eq([])
   end
