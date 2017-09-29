@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['burenstam@gmail.com']
 
   spec.summary       = 'Interact with Frilans Finans API'
-  spec.description   = 'Interact with Frilans Finans API (still under development)'
+  spec.description   = 'Interact with Frilans Finans API, easy to use and configure.'
   spec.homepage      = 'https://github.com/buren/frilans_finans_api'
   spec.license       = 'MIT'
 
